@@ -1,0 +1,381 @@
+/* Converts all boxes in the body to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+/*Places and animates the background image*/
+
+body {
+    background-image: url(../Graphics/background2.png);
+    transition: background-image 1.5s ease-in-out;
+    transition-delay: 2s;
+
+}
+/*Plays out the effect when the user hovers his/her mouse over the body*/
+body:hover {
+    background-image: url(../Graphics/background22.png);
+}
+
+/*Styles, animates and position the logo */
+img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    display: block;
+    transition: transform 300ms;
+}
+
+/*Plays out the effect when the user hovers his/her mouse over the body*/
+
+img:hover {
+transform: scale(1.1);
+
+}
+
+/*Styles, animate and position the text below the logo*/
+#logo-text {
+    display: block;
+    font-family: 'no_continueregular';
+    position: relative;
+    left:15px;
+    transition: transform 300ms;
+}
+/*Plays out the effect when the user hovers his/her mouse over the body*/
+#logo-text:hover {
+    transform: scale(1.1);
+    }
+    
+/*Changes the position of the menus above the body*/
+.flex {
+    display: flex;
+
+}
+
+.drop-down {
+    position: absolute;
+    display: none;
+    left: 470px;
+    top: 40px;
+    list-style-type:none;
+    border-radius: 10px;
+    text-align: left;
+    font-family: 'no_continueregular';
+    transition-delay: 3s;
+    z-index: 1;
+
+}
+
+ .drop-down-menu {
+     letter-spacing: 2px;
+     font-size: 1.2em;
+     font-weight: bold;
+     width: 200px;
+     color: red;
+     line-height: 25px;
+     margin-bottom: 5px;
+     padding: 7px;
+     border-radius: 3px;
+     transition: background-color 300ms, transform 2s ease;
+
+ }
+
+ img[src="../Graphics/graph_card.png"],
+img[src="../Graphics/laptop_charge.png"],
+img[src="../Graphics/processor.png"],
+img[src="../Graphics/headphone.png"] {
+    width: 35px;
+    height:35px;
+    background-size: contain;
+    float: right;
+    padding-bottom: 5px;
+}
+
+ .drop-down-menu:hover {
+    color: red;
+    background-color: white;
+    transform: scale(1.1);
+
+}
+
+.spec:hover .drop-down {
+display: block;
+
+}
+
+
+
+ .drop-down2 {
+     display: none;
+    position: fixed;
+    left: 650px;
+    top: 40px;
+    list-style-type:none;
+    text-align: left;
+    font-family: 'no_continueregular';
+    z-index: 2;
+
+}
+
+ .drop-down-menu2 {
+        letter-spacing: 3px;
+        font-size: 1.2em;
+        font-weight: bold;
+        width: 170px;
+        color: red;
+        line-height: 25px;
+        margin-bottom: 5px;
+        padding: 7px;
+        border-radius: 3px;
+        transition: background-color 300ms, transform 2s ease;
+   
+    }
+    
+img[src="../Graphics/hp.png"],
+img[src="../Graphics/dell.png"],
+img[src="../Graphics/asus.png"],
+img[src="../Graphics/lenovo.png"],
+img[src="../Graphics/acer.png"] {
+    width: 40px;
+    height:40px;
+    background-size: contain;
+    float: right;
+    padding-bottom: 15px;
+}
+
+    .drop-down-menu2:hover {
+        color: red;
+        background-color: white;
+        transform: scale(1.1);
+   
+    }
+   
+ 
+ 
+
+.spec2:hover .drop-down2 {
+    display: block;
+   
+   }
+
+
+
+/*Styles, animates and position the left box containing the laptop image*/
+.laptop_block {
+    width: 850px;
+    height: 500px;
+    position: absolute;
+    top: 170px;
+    left: 0;
+    right: 20px;
+    background-image: url(../Graphics/laptop_start.png);
+    background-size: 650px;
+    background-repeat: no-repeat;
+    background-position: 100% -60px;
+    transition: transform 7s;
+    -moz-transition: transform 7s;
+    -webkit-transition: transform 7s;
+    -o-transition: transform 7s;
+
+}
+/*Plays out the effect when the user hovers his/her mouse over the body*/
+
+.laptop_block:hover {
+    transform:scale(1.1);
+}
+
+/*Styles and animates the hyperlinks colors of the menus*/
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 300ms ease-in-out;
+
+
+}
+
+/*Plays out the effect when the user hovers his/her mouse over the body*/
+
+a:hover {
+    color: red;
+
+}
+
+/*Styles, animates and position the menu above the body */
+h1 {
+    position: relative;
+    top: 20px;
+    left: 300px;
+    color: #fff;
+    margin: 0 30px 90px 0;
+    font-family: 'no_continueregular';
+    letter-spacing: 4px;
+    transition: transform 400ms;
+}
+
+/*Plays out the effect when the user hovers his/her mouse over the body*/
+h1:hover {
+    transform: scale(1.2);
+}
+
+/*Styles, animate and position the text behind the laptop image*/
+h2 {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    line-height: 40px;
+    letter-spacing: 4px;
+    font-family: 'orbitronregular';
+    font-size: 15px;
+
+}
+
+
+/*Styles a particular text behind the laptop logo*/
+span.null {
+    color: rgb(183, 214, 255);
+}
+
+
+/*Styles, animates and position the login tab*/
+.box {
+    align-items: center;
+    background-image: url(../Graphics/login_background_overlay.png), url(../Graphics/login_background.png);
+    background-size: 250px 250px, cover;
+    background-repeat: repeat, no-repeat;
+    padding: 0px 60px;
+    background-position: center, center;
+    background-blend-mode: overlay;
+    width: 370px;
+    height: 600px;
+    position: absolute;
+    left: 950px;
+    top: 150px;
+    background-blend-mode:color;
+    -moz-transition: transform 300ms;
+    -webkit-transition: transform 300ms;
+    -o-transition: transform 300ms;
+    transition: transform 300ms;
+
+}
+/*Plays out the effect when the user hovers his/her mouse over the body*/
+
+.box:hover {
+    transform: scale(1.02);
+}
+
+
+/*Styles and animates the inputs labels in the login tab*/
+label {
+    font-family: 'no_continueregular';
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: text-shadow 300ms;
+}
+/*Plays out the effect when the user hovers his/her mouse over the body*/
+
+label:hover {
+    text-shadow: 5px  5px 10px #000;
+
+}
+/*Styles and animates the input bars in the login tab*/
+input {
+    width: 250px;
+    height: 40px;
+    border: 5px inset rgb(36, 165, 216);
+    background-color: #fff;
+    border-radius: 5px;
+    transition: box-shadow 300ms;
+
+}
+
+
+/*Plays out the effect when the user hovers his/her mouse over the body*/
+input:hover {
+box-shadow: 3px 3px 10px #000;
+
+}
+
+/*Styles the input's placeholders*/
+input[placeholder] {
+    font-family: 'righteousregular';
+
+}
+
+/*Styles and position the "Sign Up" text in the login tab*/
+.login_text {
+    color: rgb(255, 255, 255);
+    font-family:'righteousregular';
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: color 500ms;
+
+}
+
+.login_text:hover {
+color: red;
+}
+
+/*Styles and position the text below the login tab*/
+
+.sign_in {
+    margin-top: 10px;
+    margin-left: 25px;
+    border: none;
+}
+
+/*Styles and position the "REGISTER" button in the login tab*/
+.sign_ina {
+    border: 2px solid #fff;
+    margin-left: 20px;
+    padding: 0;
+    margin-top: 15px;
+    transition: box-shadow 300ms, transform 300ms;
+}
+
+/*Plays out the effect when the user hovers his/her mouse over the body*/
+.sign_ina:hover{
+  box-shadow: 3px 3px 10px #000;
+  transform: scale(1.1);
+
+}
+/*Styles the text below the login tab*/
+.sign_ina a {
+    font-family: 'no_continueregular';
+    font-size: 20px;
+
+}
+
+/*Styles and position the button in the login tab*/
+button {
+    background-color: transparent;
+    width: 200px;
+    height: 30px;
+    padding: 0px 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    transition: transform 300ms;
+
+
+}
+
+button > a {
+    text-decoration: none;
+    font-family: 'righteousregular';
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 15px;
+
+}
+
+button > a:hover{
+    color:#fff;
+}
+
+
+button:hover {
+    color:#000;
+    transform: scale(1.1);
+}
